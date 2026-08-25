@@ -44,45 +44,32 @@ let 启用原生地址 = false; // 原生地址默认关闭
 // 访问这些站点时解析 AAAA 并直连 IPv6（含子域）
 const IPV6优先域名列表 = [
   // -------------------------------------------------------------
-  // 1. 纯 Gemini / Google 基础 API（完美适用 IPv6 专线）
+  // 1. Google 基础与 API 核心（走 IPv6 专线）
   // -------------------------------------------------------------
   'google.com',
   'googleapis.com',
+  'generativelanguage.googleapis.com', // 👈 Gemini API 直连
+  'oauth2.googleapis.com',              // 👈 API 鉴权
   'gstatic.com',
   'googleusercontent.com',
   'withgoogle.com',
+  'ai.google.dev',                      // 👈 AI 开发平台
   '1e100.net',
 
   // -------------------------------------------------------------
-  // 2. YouTube & 视频流（已完全禁用 IPv6，避免转圈圈）
+  // 2. YouTube & 视频流（保持注释：走常规 IPv4，避免转圈）
   // -------------------------------------------------------------
-  // 'googlevideo.com',     // 视频数据流 CDN（走 IPv6 会导致严重转圈/卡顿，切勿取消注释）
-  // 'youtube.com',         // YouTube 主站
-  // 'youtu.be',            // 短链接
-  // 'ytimg.com',           // 封面图及静态资源
-  // 'ggpht.com',           // 用户头像及静态资源
-  // 'gvt1.com',            // Google 视频/软件传输
-  // 'gvt2.com',
+  // 'googlevideo.com',
+  // 'youtube.com',
+  // 'youtu.be',
+  // 'ytimg.com',
+  // 'ggpht.com',
 
   // -------------------------------------------------------------
-  // 3. 广告及追踪服务（建议不走 IPv6 专线，留给常规代理即可）
-  // -------------------------------------------------------------
-  // 'googleadservices.com',
-  // 'googlesyndication.com',
-  // 'google-analytics.com',
-  // 'doubleclick.net',
-
-  // -------------------------------------------------------------
-  // 4. OpenAI / ChatGPT（已禁用：不支持 Worker IPv6，会 403/拒绝连接）
+  // 3. OpenAI / ChatGPT / Grok（保持注释：不支持 Worker IPv6）
   // -------------------------------------------------------------
   // 'openai.com',
   // 'chatgpt.com',
-  // 'oaistatic.com',
-  // 'oaiusercontent.com',
-
-  // -------------------------------------------------------------
-  // 5. Grok / xAI（已禁用：不支持 Worker IPv6）
-  // -------------------------------------------------------------
   // 'x.ai',
   // 'grok.com'
 ];
