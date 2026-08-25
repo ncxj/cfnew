@@ -48,12 +48,9 @@ const IPV6优先域名列表 = [
   // -------------------------------------------------------------
   'google.com',
   'googleapis.com',
-  'generativelanguage.googleapis.com', // 👈 Gemini API 直连
-  'oauth2.googleapis.com',              // 👈 API 鉴权
   'gstatic.com',
   'googleusercontent.com',
   'withgoogle.com',
-  'ai.google.dev',                      // 👈 AI 开发平台
   '1e100.net',
 
   // -------------------------------------------------------------
