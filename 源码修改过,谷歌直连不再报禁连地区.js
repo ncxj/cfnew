@@ -52,6 +52,9 @@ const IPV6优先域名列表 = [
   'googleusercontent.com',
   'withgoogle.com',
   '1e100.net',
+  'gemini.google.com',  // 👈 仅包含 Gemini 网页端，稳定网页访问
+  'aistudio.google.com' // 👈 仅包含 AI Studio 网页端，稳定网页访问
+
 
   // -------------------------------------------------------------
   // 2. YouTube & 视频流（保持注释：走常规 IPv4，避免转圈）
