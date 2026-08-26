@@ -52,8 +52,6 @@ const IPV6优先域名列表 = [
   'googleusercontent.com',
   'withgoogle.com',
   '1e100.net',
-  'gemini.google.com',  // 👈 仅包含 Gemini 网页端，稳定网页访问--确定没问题,但是第一次访问,却不行?
-  'aistudio.google.com' // 👈 仅包含 AI Studio 网页端，稳定网页访问
 
 
   // -------------------------------------------------------------
